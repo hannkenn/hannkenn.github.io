@@ -1,0 +1,57 @@
+/*General formating for the entire document*/
+body {
+	font-family:Arial, sans-serif;
+background-color:gainsboro;
+/*set text color*/
+color: #333;
+}
+header,main, footer{
+	
+/*Center-align content and set maximum width*/
+margin: 0 auto;
+max-width: 1200px;
+/*Add padding and set background color to purple*/
+padding:10px;
+background-color: blanchedalmond;
+}
+/*navigation list styles*/
+nav ul{
+	/*remove default list styling*/
+	list-style-type: none;
+	/*remove padding*/
+	padding: 0;
+}
+nav ul li{
+	/*display list items inlin*/
+	display: inline;
+	/*add right margin*/
+	margin-right: 10px;
+}
+/*hyper link styles*/
+nav ul il a {
+	text-decoration: none;
+	color: #007BFF;
+}
+/*hover state for hypertext links*/
+nav ul li a:hover{
+	color:#0056b3;
+	/*center-align header and footer contents*/
+	header, footer{
+		text-align: center;
+	}
+	
+}
+	/*contact link style*/
+	#contact a {
+		color: #007BFF;
+		text-decoration:underline;
+	}
+	/*responsive design for mobile viewports*/
+	@media (max-width:600px) {
+		nav ul li{
+			/*display list items as block elements*/
+			display:block;
+			margin:5px 0;
+		}
+	}
+

@@ -1,0 +1,55 @@
+*
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set metadata of the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form</title>
+</head>
+<body>
+	<script>
+	<!----Function to get current date and time--->
+	function getCurrentDayAndTime(){
+		var now = new Date();
+		var day0fweek = now.toLocaleDateString('en-US',{weekday; 'long'})
+		var time = now.toLocaleTimeString('en-US');
+		return day0fweek + ', ' + time
+		}
+<!---function to send an alert--->
+		function showAlert() {
+		alert('This is an alert message!');
+<!----using a math method (random number)
+		var randomNumber = math.floor(math.random() * 100) + 1;
+<!----delay comand--->
+		setTimeout(function(){
+		console.log('Delayed command excuted after 2 seconds');
+		}, 2000);
+<!---interval command--->
+		var count = 10;
+		var countdown = setInterval(function(){
+		console.log(count);
+		count--;
+		if(count <0){
+		clearInterval(countdown);
+		console.log('countdown complete');
+		}
+		}, 1000);
+<!----convert between numbers and text--->
+		var num = 123;
+		var numASText = num.toString();
+		var text = '456';
+		var textAsNum = parseInt(text);
+		<!---example usage--->
+		console.log('current day an time:', getCurrentDayAndTime());
+		showAlert();
+		console.log('Random number:',randomNumber);
+		console.log('Convert number to text:', textAsNum);
+	</script>
+		
+</body>
+</html>
+		
+	
+		

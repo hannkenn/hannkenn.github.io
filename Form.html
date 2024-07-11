@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set metadata of the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Information Form</title>
+	<!---Link to the external css stylesheet-->
+	<link rel="stylesheet" href="style.css">
+	<link rel="JavaScript" href="JavaScript.html">
+</head>
+<body>
+	<div class="form-container">
+			<h2>Cat Information Form</h2>
+	<!-----Form for collecting cat information-->
+			<form action="submit-cat-info.php" method="post">
+	<!---fieldset for basic information--->
+			<fieldset>
+				<legend>Basic
+Information</legend>
+			<div class="form-group">
+					<label for="cat-name">Cat Name:</label>
+	<!---text input for cat name with pattern validation--->
+					<input type="text" id="cat-name" name="cat-name" pattern "[A-Za-z\s]+" title="Letters and spaces only" required>
+					</div>
+					<div class="form-group">
+					<label for="cat-breed">Cat Breed:</label>
+	<!---text input with a datallist for breed suggestions--->
+					<input type="text" id="cat-breed" name="cat-breed" list="breeds" required>
+					<datalist id="breeds">
+						<option value="Persian">
+						<option value="Maine Coon">
+						<option value="Ragdoll">
+						<option value="Abyssinian">
+						</datalist>
+					</div>
+					<div class="form-group">
+						<label for="cat-age">Cat Age:</label>
+	<!---number input for cat age with min and max values--->
+					<input type="number" id="
+					cat-age" name="cat-age" min="0" max="25" required>
+					</div>
+					<fieldset>
+						<legend> Additional Information</legend>
+					<div class="form-group">
+						<label for="adoption-date"> Adoption Date:</label>
+	<!----date input for adoption date--->
+					<input type="date" id="adoption-date" name="adoption-date" required>
+					</div>
+					<div class="form-group">
+						<label>Gender:</label>
+	<!-----radio button for gender selection--->
+						<label>
+					<input type="radio" name="gender" value ="Male" required> Male</label>
+						<label>
+					<input type="radio" name="gender" value="Female" required> Female</label>
+					</div>
+					<div class="form-group">
+						<label for="feeding-time"> Feeding time:</label>
+	<!---time inpput for feeding time--->
+					<input type="time" id="feeding-time" name="feeding-time" required>
+					</div>
+					<div class="form-group">
+						<label for="health-check">Health Check:</label>
+	<!---checkbox for health check--->
+					<input type="checkbox" id="health-check" name="health-check" value="yes"> yes
+					</div>
+					<div class="form-group"
+						<label for="energy-level">Energy Level:</label>
+	<!--------range slider for energy level--->
+					<input type="range" id="energy-level" name="energy-level" min="1" max="10">
+					</div>
+					<div class="form-group">
+						<label for="favorite-toys"> favorite toys:</label>
+	<!--selection list for favorite toys with multiple selection allowwed--->
+					<select id="favorite-toys" name="favorite-toys" multiple>
+					<option value ="Ball">Ball</option>
+					<option value ="Mouse">Mouse</option>
+					<option value ="Feather">Feather</option>
+					<option value ="Laser Pointer">Laser Pointer</option>
+					</select>
+					</div>
+					<div class="form-group">
+					<label for="cat-description">Description:</label>
+<!----Textarea for description with max length--->
+					<textarea id="cat-description" name="cat-description" rows="4" maxlength="500" required></textarea>
+					</div>
+					<div class="form-group">
+						<label for "contact-email">Contact Email:</label>
+<!----email input to trigger email keyboard on mobile device----->
+						<input type ="email" id="contact-email" name="contact-email" required>
+					</div>
+				</fieldset>
+<!---form buttons------>
+
+<!---submit and reset button------>
+					<div class="form-group">
+					   <button type="reset">Reset</button>
+					   <button type="submit">Submit</button>
+					</div>
+					
+				</form>
+			</div>
+</body>
+</html>
+				
+					
+					
+				
+				
+			
+	
+	

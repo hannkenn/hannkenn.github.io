@@ -1,0 +1,78 @@
+/*General style for the body*/
+body{
+	font-family:Ariel,sans-serif;
+	background: color #ffe6f7;
+	margin:0;
+	padding:20px;
+}
+/*container for the form*/
+.form-container{max-width:600px;
+margin:auto;
+background: color #faf3fa;
+padding:20px;
+border-radius:5px;
+box-shadow:0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*style for the form header*/
+.form-container h2{
+	text-align: center;
+}
+/*style for fieldsets*/
+fieldset{
+	margin-bottom:20px;
+	border-radius:5px;
+	padding:15px;
+}
+/*style for legends in fieldsets*/
+legend{
+	padding:0 10px;
+	font-weight:bold;
+}
+/*General style for form groups*/
+.form-group{
+	margin-bottom:15px;
+/*style for form labels*/
+.form-group label{
+	display: block;
+	margin-bottom:5px;
+}
+/*general styles for input,textarea, and select elements*/
+.form-group input,
+.form-group textarea,
+.form-group select{
+	width:100%;
+	padding:10px;
+	border:1px solid #ced4da;
+	border-radius:4px;
+}
+/*specific style for the textarea elements*/
+.form-group textarea{
+	resize:vertical;
+}
+
+/*style for button*/
+.form-group button{
+	width:48%;
+	padding:10px;
+	background-color:#faf3fa;
+	border:none;
+	color:white;
+	cursor:pointer;
+	margin-right:4%;
+}
+/*hover effects for buttons*/
+.form-group button:hover{
+	opacity: 0.9;
+}
+/*style for focused input, textarea, and select elements*/
+input:focus, textarea:focus, select:focus{
+	border-color:#faf3fa;
+	outline:0;
+	box-shadow:0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/*style for valid input, textarea, and select element*/
+input:valid, textarea:valid,
+select:valid{
+
+border-color:#28a745;
+}
